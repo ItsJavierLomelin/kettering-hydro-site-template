@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import Callout from '../../components/Callout.astro';
+import { city, services } from '../../data/city';
+import { u } from '../../lib/utils';
+const c = city.indexPages.services;
+---
+<Base title={c.title} description={c.desc} path="/services/" crumbs={[{ name: 'Services', path: '/services/' }]}>
+  <Hero headline={c.h1} intro={c.intro} location="Services" crumbs={[{ href: '/services/', label: 'Services' }]} />
+  <section class="sec sec-cream"><div class="sec-in">
+    <div class="svc-grid">{services.map((s) => <a class="svc" href={u(`/services/${s.slug}/`)}><span class="eb">Service</span><h3>{s.name}</h3><p>{s.blurb}</p><span class="arrow">Read more &rarr;</span></a>)}</div>
+  </div></section>
+  <Callout />
+</Base>

@@ -1,0 +1,449 @@
+{
+  "site": {
+    "city": "{City}",
+    "region": "{ST}",
+    "regionName": "{State}",
+    "country": "US",
+    "niche": "{Main Service}",
+    "brand": "{Biz Name}",
+    "origin": "https://template.prosapp.site",
+    "phoneDisplay": "(877) 761-0283",
+    "phoneHref": "+18777610283",
+    "ga4MeasurementId": "",
+    "airchattyTrackingId": "{tracker id}",
+    "businessDescription": "{One sentence: what {Biz Name} offers in {City, ST}.}",
+    "orgDescription": "{One schema.org sentence: what {Biz Name} is, plus the availability/suitability confirmation note.}",
+    "llmsSummary": "{Two sentences for llms.txt: what {Biz Name} offers in {City, ST}, the phone number, and the no-guarantee note.}",
+    "schemaServiceType": "{Main Service}"
+  },
+  "ui": {
+    "heroEyebrow": "{City, ST}",
+    "calloutTitle": "{Bottom call band heading}",
+    "calloutText": "{One sentence next to the call button}",
+    "successNiche": "{main service}"
+  },
+  "home": {
+    "h1": "{Homepage headline for {Biz Name}, unique to {City, ST}. From the headlines doc, not a formula.}",
+    "intro": "{2-4 sentences of genuinely local homepage copy: real housing stock, real drain situations in {City, ST}. No city-name swap.}",
+    "lead": [],
+    "sections": [],
+    "title": "{Homepage title tag}",
+    "desc": "{Homepage meta description}",
+    "compareTitle": "{Method comparison heading}",
+    "compareLead": "{One or two sentences framing the comparison}",
+    "compareJettingH": "{Method A name}",
+    "compareJettingP1": "{What the authority source says about method A. Inline link where a source backs the claim.}",
+    "compareJettingP2": "{One sentence: when method A fits}",
+    "compareRoddingH": "{Method B name}",
+    "compareRoddingP1": "{One sentence: how method B works}",
+    "compareRoddingP2": "{One sentence: how to choose}",
+    "servicesTitle": "{Services section heading}",
+    "servicesLead": "{One sentence framing the service lineup}",
+    "housingTitle": "{Local housing section heading, unique to {City, ST}}",
+    "housingLead": "{One or two sentences: the researched local angle for {City, ST}}",
+    "housingBox": "{Researched local fact box, with an inline authority link. Real, sourced, specific to {City, ST}.}",
+    "steps": [
+      {
+        "t": "{Step 1}",
+        "d": "{One sentence}"
+      },
+      {
+        "t": "{Step 2}",
+        "d": "{One sentence}"
+      },
+      {
+        "t": "{Step 3}",
+        "d": "{One sentence}"
+      },
+      {
+        "t": "{Step 4}",
+        "d": "{One sentence}"
+      }
+    ],
+    "faqHeading": "{Homepage FAQ section heading}",
+    "faqs": [
+      {
+        "q": "{Homepage FAQ 1}",
+        "a": "{Answer, plain and honest}"
+      },
+      {
+        "q": "{Homepage FAQ 2}",
+        "a": "{Answer}"
+      },
+      {
+        "q": "{Homepage FAQ 3}",
+        "a": "{Answer}"
+      },
+      {
+        "q": "{Homepage FAQ 4}",
+        "a": "{Answer}"
+      }
+    ],
+    "calloutTitle": "{Mid-page call band heading}",
+    "calloutText": "{One sentence next to the call button}",
+    "coverageTitle": "{Coverage section heading, names {City, ST} areas}",
+    "coverageLead": "{One sentence about the neighborhood pages}",
+    "footerLinksHtml": "{One closing sentence with inline links to the guides and top services}"
+  },
+  "services": [
+    {
+      "slug": "service-one",
+      "name": "{Service One}",
+      "shortName": "{Service One, short}",
+      "note": "{One short phrase for the neighborhood card}"
+    },
+    {
+      "slug": "service-two",
+      "name": "{Service Two}",
+      "shortName": "{Service Two, short}",
+      "note": "{One short phrase}"
+    },
+    {
+      "slug": "service-three",
+      "name": "{Service Three}",
+      "shortName": "{Service Three, short}",
+      "note": "{One short phrase}"
+    }
+  ],
+  "guides": [
+    {
+      "slug": "how-hydro-jetting-works",
+      "name": "How Hydro Jetting Works"
+    },
+    {
+      "slug": "hydro-jetting-vs-snaking",
+      "name": "Hydro Jetting vs Snaking"
+    }
+  ],
+  "indexPages": {
+    "services": {
+      "title": "{Services hub title tag}",
+      "desc": "{Services hub meta description}",
+      "h1": "{Services hub H1}",
+      "intro": "{One sentence}"
+    },
+    "guides": {
+      "title": "{Guides hub title tag}",
+      "desc": "{Guides hub meta description}",
+      "h1": "{Guides hub H1}",
+      "intro": "{One sentence}"
+    },
+    "neighborhoods": {
+      "title": "{Neighborhoods hub title tag}",
+      "desc": "{Neighborhoods hub meta description}",
+      "h1": "{Neighborhoods hub H1}",
+      "intro": "{One sentence}"
+    },
+    "contact": {
+      "title": "{Contact title tag}",
+      "desc": "{Contact meta description}",
+      "h1": "{Contact H1}",
+      "intro": "{One or two sentences}"
+    }
+  },
+  "pages": {
+    "service-one": {
+      "h1": "{Service One page headline, unique to {City, ST}. From the headlines doc.}",
+      "intro": "{2-4 sentences, specific to {Service One} and {City, ST}}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Section heading as a real question}",
+          "ps": [
+            "{Paragraph with an inline authority link where a source backs the claim}"
+          ]
+        },
+        {
+          "h": "{What should {City} homeowners check first?}",
+          "ps": [
+            "{Local paragraph, researched for {City, ST}}",
+            "{Second paragraph}"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ. Permit question only if research shows {Service One} requires a permit in {City, ST}.}",
+          "a": "{Answer}"
+        }
+      ],
+      "title": "{Title tag}",
+      "desc": "{Meta description}",
+      "blurb": "{One sentence service card blurb}",
+      "icon": "drop"
+    },
+    "service-two": {
+      "h1": "{Service Two page headline, unique to {City, ST}}",
+      "intro": "{Intro}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "title": "{Title tag}",
+      "desc": "{Meta description}",
+      "blurb": "{Card blurb}",
+      "icon": "leaf"
+    },
+    "service-three": {
+      "h1": "{Service Three page headline, unique to {City, ST}}",
+      "intro": "{Intro}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "title": "{Title tag}",
+      "desc": "{Meta description}",
+      "blurb": "{Card blurb}",
+      "icon": "repeat"
+    },
+    "how-hydro-jetting-works": {
+      "h1": "{Guide headline}",
+      "intro": "{Intro}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "title": "{Title tag}",
+      "desc": "{Meta description}"
+    },
+    "hydro-jetting-vs-snaking": {
+      "h1": "{Guide headline}",
+      "intro": "{Intro}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "title": "{Title tag}",
+      "desc": "{Meta description}"
+    },
+    "privacy": {
+      "h1": "Privacy Policy",
+      "intro": "{Launch-ready privacy copy for this site. No placeholder contacts.}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [],
+      "title": "{Title tag}",
+      "desc": "{Meta description}"
+    },
+    "terms": {
+      "h1": "Terms of Service",
+      "intro": "{Launch-ready terms copy. No placeholder contacts.}",
+      "lead": [],
+      "sections": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "faqs": [],
+      "title": "{Title tag}",
+      "desc": "{Meta description}"
+    }
+  },
+  "neighborhoods": [
+    {
+      "slug": "location-one",
+      "name": "{Location One}",
+      "h1": "{Main Service} in {Location One}, {City, ST}",
+      "title": "{Title tag}",
+      "description": "{Meta description}",
+      "intro": "{2-3 sentences on the card: real, researched local context for {Location One}. Helpful, not a stock sentence.}",
+      "hero": "{2-4 sentences of hero copy, genuinely about {Location One}: founding, housing eras, typical lines. Not generic.}",
+      "body": [
+        {
+          "h": "{Section heading as a real local question}",
+          "ps": [
+            "{Researched local paragraph}",
+            "{Second paragraph}"
+          ]
+        },
+        {
+          "h": "{Section heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        },
+        {
+          "h": "{Section heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "steps": [
+        [
+          "{Step 1}",
+          "{One sentence}"
+        ],
+        [
+          "{Step 2}",
+          "{One sentence}"
+        ],
+        [
+          "{Step 3}",
+          "{One sentence}"
+        ],
+        [
+          "{Step 4}",
+          "{One sentence}"
+        ]
+      ],
+      "mapIntro": "{One sentence above the map}",
+      "mapLabel": "{Location One} area",
+      "mapSrc": "{Google Maps embed URL for {Location One}}",
+      "faqs": [
+        {
+          "q": "{FAQ about {Location One}}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        },
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "cta": "{Closing heading for {Location One}}",
+      "ctaP": "{One sentence next to the buttons}"
+    },
+    {
+      "slug": "location-two",
+      "name": "{Location Two}",
+      "h1": "{Main Service} in {Location Two}, {City, ST}",
+      "title": "{Title tag}",
+      "description": "{Meta description}",
+      "intro": "{Card intro}",
+      "hero": "{Hero copy}",
+      "body": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "steps": [
+        [
+          "{Step 1}",
+          "{One sentence}"
+        ]
+      ],
+      "mapIntro": "{One sentence}",
+      "mapLabel": "{Location Two} area",
+      "mapSrc": "{Google Maps embed URL}",
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "cta": "{Closing heading}",
+      "ctaP": "{One sentence}"
+    },
+    {
+      "slug": "location-three",
+      "name": "{Location Three}",
+      "h1": "{Main Service} in {Location Three}, {City, ST}",
+      "title": "{Title tag}",
+      "description": "{Meta description}",
+      "intro": "{Card intro}",
+      "hero": "{Hero copy}",
+      "body": [
+        {
+          "h": "{Heading}",
+          "ps": [
+            "{Paragraph}"
+          ]
+        }
+      ],
+      "steps": [
+        [
+          "{Step 1}",
+          "{One sentence}"
+        ]
+      ],
+      "mapIntro": "{One sentence}",
+      "mapLabel": "{Location Three} area",
+      "mapSrc": "{Google Maps embed URL}",
+      "faqs": [
+        {
+          "q": "{FAQ}",
+          "a": "{Answer}"
+        }
+      ],
+      "cta": "{Closing heading}",
+      "ctaP": "{One sentence}"
+    }
+  ]
+}

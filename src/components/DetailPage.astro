@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from './Hero.astro';
+import Callout from './Callout.astro';
+import { u } from '../lib/utils';
+import { faqSchema } from '../lib/seo';
+const fixHref = (p: string) => p.replace(/href="(\/[^"]*)"/g, (_m, h) => 'href="' + u(h) + '"');
+const { path, title, description, h1, intro, sections = [], faqs = [], related = [], parent, name, location, service = false, legal = false } = Astro.props;
+const crumbs = [...(parent ? [{ name: parent.name, path: parent.path }] : []), { name, path }];
+const heroCrumbs = crumbs.map((c) => ({ href: c.path, label: c.name }));
+---
+<Base title={title} description={description} path={path} crumbs={crumbs} service={service} extraSchema={faqs.length ? [faqSchema(faqs)] : []}>
+  <Hero headline={h1} intro={intro} location={location ?? name} crumbs={heroCrumbs} />
+  <section class="sec sec-white"><div class="sec-in prose">
+    {sections.map((s) => (<><h2>{s.h}</h2>{s.ps.map((p) => <p set:html={fixHref(p)} />)}</>))}
+    {related.length > 0 && <div class="related">{related.map((r) => <a href={u(r.href)}>{r.label}</a>)}</div>}
+  </div></section>
+  {faqs.length > 0 && (
+    <section class="sec sec-low"><div class="sec-in">
+      <h2 class="sec-title">Questions about this drain problem</h2>
+      <div class="faq">{faqs.map((f) => <article><h3>{f.q}</h3><p set:html={f.a} /></article>)}</div>
+    </div></section>
+  )}
+  {!legal && <Callout />}
+</Base>

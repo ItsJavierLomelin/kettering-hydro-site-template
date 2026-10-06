@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import NeighborhoodBody from '../../components/NeighborhoodBody.astro';
+import { neighborhoods, services } from '../../data/city';
+import { business } from '../../lib/site';
+import { faqSchema } from '../../lib/seo';
+export function getStaticPaths() { return neighborhoods.map(n => ({params:{slug:n.slug},props:{n}})); }
+const { n } = Astro.props;
+const path = `/neighborhood/${n.slug}/`;
+const crumbs = [{name:'Neighborhoods',path:'/neighborhood/'},{name:n.name,path}];
+const heroCrumbs = crumbs.map(c => ({href:c.path,label:c.name}));
+const nhServices = services.map(s => ({ path: `/services/${s.slug}/`, name: s.shortName, note: s.note }));
+const schema = faqSchema(n.faqs);
+---
+<Base title={n.title} description={n.description} path={path} crumbs={crumbs} service={true} extraSchema={[schema]}>
+<Hero headline={n.h1} intro={n.hero} location={n.name} crumbs={heroCrumbs} />
+<NeighborhoodBody n={n} all={neighborhoods} services={nhServices} phoneHref={business.phoneHref} phoneDisplay={business.phoneDisplay} />
+</Base>

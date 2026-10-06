@@ -1,0 +1,27 @@
+---
+import { pageImage } from '../lib/pageImages';
+import RequestForm from './RequestForm.astro';
+import { city } from '../data/city';
+import { u } from '../lib/utils';
+const { headline, intro, location, crumbs = [], eyebrow = city.ui.heroEyebrow } = Astro.props;
+const img = pageImage(headline);
+const noImg = ['Privacy', 'Terms'].includes(location);
+---
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      {crumbs.length > 0 && (
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href={u('/')}>Home</a>
+          {crumbs.map((c, i) => <><span aria-hidden="true">/</span>{i < crumbs.length - 1 ? <a href={u(c.href)}>{c.label}</a> : <span>{c.label}</span>}</>)}
+        </nav>
+      )}
+      <span class="eyebrow">{eyebrow}</span>
+      <h1>{headline}</h1>
+      <p class="hero-copy">{intro}</p>
+      {!noImg && <img class="hero-img" src={u(img.src)} alt={img.alt} width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" />}
+      {!noImg && <p class="image-note">Illustrative image, not a photo of a local job.</p>}
+    </div>
+    <RequestForm location={location} />
+  </div>
+</section>
