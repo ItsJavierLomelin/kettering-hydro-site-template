@@ -20,7 +20,6 @@ const noImg = ['Privacy', 'Terms'].includes(location);
       <h1>{headline}</h1>
       <p class="hero-copy">{intro}</p>
       {!noImg && <img class="hero-img" src={u(img.src)} alt={img.alt} width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" />}
-      {!noImg && <p class="image-note">Illustrative image, not a photo of a local job.</p>}
     </div>
     <RequestForm location={location} />
   </div>
